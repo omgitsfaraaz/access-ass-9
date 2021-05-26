@@ -1,0 +1,245 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --paleblue: hsl(223, 100%, 88%);
+    --lightred: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --verydarkblue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 30px;
+}
+
+.logo-para {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.logo-para span {
+    color: var(--blue);
+}
+
+.launch-para {
+    color: var(--gray);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.launch-para span {
+    color: black;
+    font-weight: 700;
+}
+
+.subscribe-para {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.input-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.email-input {
+    line-height: 40px;
+    border-radius: 40px;
+    border-color: var(--gray);
+    outline: none;
+    border-style: solid;
+}
+
+.email-input::placeholder {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 0.9px;
+    color: var(--gray);
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 40px;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+}
+
+.illustration {
+    width: 100%;
+    margin-top: 90px;
+}
+
+.foot {
+    margin-top: 120px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.social-icons img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.foot p {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--gray);
+    margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+    .logo-para, .launch-para, .subscribe-para, .input-btn, .email-input, .email-input::placeholder, .button, .illustration, .foot, .social-icons {
+        display: none;
+    }
+
+    .logo-para--desk, .launch-para--desk, .subscribe-para--desk, .input-btn--desk, .email-input--desk, .email-input--desk::placeholder, .button--desk, .illustration--desk, .foot--desk, .social-icons--desk {
+        display: block;
+    }
+
+    body {
+        font-family: 'Libre Franklin', sans-serif;
+        padding: 30px;
+        height: 100vh;
+    }
+
+    .logo-para--desk {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .logo-para--desk span {
+        color: var(--blue);
+    }
+
+    .launch-para--desk {
+        color: var(--gray);
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .launch-para--desk span {
+        color: black;
+        font-weight: 700;
+    }
+
+    .subscribe-para--desk {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .input-btn--desk {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-left: 408px;
+        padding-right: 408px;
+    }
+
+    /* .button--desk {
+        padding: 15px 30px;
+        border-radius: 40px;
+        background-color: var(--blue);
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 0.9rem;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 600;
+    } */
+
+    .email-input--desk {
+        line-height: 40px;
+        border-radius: 40px;
+        border-color: var(--gray);
+        outline: none;
+        border-style: solid;
+        height: 50px;
+        width: 310px;
+    }
+
+    .email-input--desk::placeholder {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        font-family: 'Libre Franklin', sans-serif;
+        letter-spacing: 0.9px;
+        color: var(--gray);
+    }
+
+    .button--desk {
+        height: 46px;
+        padding: 15px 45px;
+        border-radius: 40px;
+        background-color: var(--blue);
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 0.9rem;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 600;
+    }
+
+    .illustration--desk {
+        width: 100%;
+        margin-top: 35px;
+        padding-left: 385px;
+        padding-right: 385px;
+    }
+
+    .foot--desk {
+        margin-top: 120px;
+    }
+    
+    .social-icons--desk {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 600px;
+        padding-right: 600px;
+    }
+    
+    .social-icons--desk img {
+        width: 18px;
+        cursor: pointer;
+    }
+
+    .foot--desk p {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--gray);
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+}
